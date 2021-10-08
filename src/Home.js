@@ -1,11 +1,11 @@
 import "./Home.css";
 import Navbar from "./Navbar"
 import {useState} from "react"
-import {useHistory} from "react-router-dom"
+
 import SideNav from "./SideNav";
 let Home = () => {
    const [isProfileHoverContent, setIsProfileHoverContent] = useState(false);
-  let history = useHistory();
+  
   return (
     <div>
       <Navbar />
@@ -19,9 +19,18 @@ let Home = () => {
           <div className="hover_profile_info_home">
             <div className="post_viewer">
               <div className="post">
-                <img src=" https://mir-s3-cdn-cf.behance.net/projects/115/5e21d266312309.Y3JvcCw2NDYsNTA1LDMwMywxNzM.jpg" />
-                <img src=" https://mir-s3-cdn-cf.behance.net/projects/115/beeddd61980931.Y3JvcCw5MDAsNzA0LDMxLDI0.jpg" />
-                <img src=" https://mir-s3-cdn-cf.behance.net/projects/115/81b31c50754593.Y3JvcCwxMTU0LDkwMywwLDEwNDA.jpg" />
+                <img
+                  src=" https://mir-s3-cdn-cf.behance.net/projects/115/5e21d266312309.Y3JvcCw2NDYsNTA1LDMwMywxNzM.jpg"
+                  alt=""
+                />
+                <img
+                  src=" https://mir-s3-cdn-cf.behance.net/projects/115/beeddd61980931.Y3JvcCw5MDAsNzA0LDMxLDI0.jpg"
+                  alt=""
+                />
+                <img
+                  src=" https://mir-s3-cdn-cf.behance.net/projects/115/81b31c50754593.Y3JvcCwxMTU0LDkwMywwLDEwNDA.jpg"
+                  alt=""
+                />
               </div>
             </div>
             <div className="social-media-info-container">
@@ -57,6 +66,7 @@ let Home = () => {
             <img
               className="image-display"
               src="https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/c507bd61980931.5a80ce5c610d8.jpg"
+              alt=""
             ></img>
           </div>
           <div className="space module-separater">
@@ -89,12 +99,14 @@ let Home = () => {
               <img
                 className="product-display"
                 src=" https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/0c638b61980931.5a80ce5b5dc18.jpg"
+                alt=""
               />
             </div>
             <div className="product-image">
               <img
                 className="product-display"
                 src="https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/7f2c9e61980931.5a80ce5b5e142.jpg"
+                alt=""
               />
             </div>
           </div>
@@ -106,12 +118,14 @@ let Home = () => {
               <img
                 className="product-display"
                 src=" https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/214f0461980931.5a80ce5be2e38.jpg"
+                alt=""
               />
             </div>
             <div className="product-image">
               <img
                 className="product-display"
                 src="https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/44488961980931.5a80ce5be3366.jpg"
+                alt=""
               />
             </div>
           </div>
@@ -140,6 +154,7 @@ let Home = () => {
             <img
               className="image-display"
               src="https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/a68f7061980931.5a80ce5c62151.jpg"
+              alt=""
             />
           </div>
           <div className="space module-separater">
@@ -149,6 +164,7 @@ let Home = () => {
             <img
               className="image-display"
               src="https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/05117c61980931.5a80ce5c62913.jpg"
+              alt=""
             />
           </div>
           <div className="space module-separater">
@@ -193,6 +209,7 @@ let Home = () => {
             <img
               className="image-display"
               src="https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/1fdf6261980931.5a80ce5c60c0d.jpg"
+              alt=""
             />
           </div>
           <div className="space module-separater">
@@ -202,6 +219,7 @@ let Home = () => {
             <img
               className="image-display"
               src="https://mir-s3-cdn-cf.behance.net/project_modules/fs/721e5a61980931.5a80ce5c6262e.gif"
+              alt=""
             />
           </div>
           <div className="space module-separater">
@@ -228,6 +246,7 @@ let Home = () => {
             <img
               className="image-display"
               src="https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/311adf61980931.5a80ce5c61888.jpg"
+              alt=""
             />
           </div>
           <div className="space module-separater">
@@ -237,6 +256,7 @@ let Home = () => {
             <img
               className="image-display"
               src="https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/662b4b61980931.5a80ce5c606d2.jpg"
+              alt=""
             />
           </div>
           <div className="space module-separater">
@@ -259,12 +279,14 @@ let Home = () => {
             <img
               className="image-display"
               src="https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/a68f7061980931.5a80ce5c62151.jpg"
+              alt=""
             />
           </div>
           <div className="home_content_image_container">
             <img
               className="image-display"
               src="https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/c507bd61980931.5a80ce5c610d8.jpg"
+              alt=""
             ></img>
           </div>
           <div className="space module-separater">

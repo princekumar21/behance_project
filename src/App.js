@@ -2,7 +2,7 @@
 import Home from "./Home";
 import Login from "./Login";
 import Signup from "./Signup";
-import {BrowserRouter as Router, Route, Link, Switch} from "react-router-dom"
+import {BrowserRouter as Router, Route,  Switch} from "react-router-dom"
 function App() {
   return (
     <div className="App">
