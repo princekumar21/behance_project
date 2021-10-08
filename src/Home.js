@@ -1,16 +1,56 @@
 import "./Home.css";
 import Navbar from "./Navbar"
+import {useState} from "react"
 import {useHistory} from "react-router-dom"
 import SideNav from "./SideNav";
 let Home = () => {
+   const [isProfileHoverContent, setIsProfileHoverContent] = useState(false);
   let history = useHistory();
   return (
     <div>
       <Navbar />
+      <div className="profile_viewer">
+        <div
+          className="profile_viewer_display"
+          onMouseEnter={() => setIsProfileHoverContent(true)}
+          onMouseLeave={() => setIsProfileHoverContent(false)}
+        ></div>
+        {isProfileHoverContent && (
+          <div className="hover_profile_info_home">
+            <div className="post_viewer">
+              <div className="post">
+                <img src=" https://mir-s3-cdn-cf.behance.net/projects/115/5e21d266312309.Y3JvcCw2NDYsNTA1LDMwMywxNzM.jpg" />
+                <img src=" https://mir-s3-cdn-cf.behance.net/projects/115/beeddd61980931.Y3JvcCw5MDAsNzA0LDMxLDI0.jpg" />
+                <img src=" https://mir-s3-cdn-cf.behance.net/projects/115/81b31c50754593.Y3JvcCwxMTU0LDkwMywwLDEwNDA.jpg" />
+              </div>
+            </div>
+            <div className="social-media-info-container">
+              <div className="icon-container">
+                <span class="material-icons outlined icon">thumb_up</span>
+                <span className="like-info">8</span>
+              </div>
+              <div className="icon-container">
+                <span class="material-icons icon">visibility</span>
+                <span className="like-info">278</span>
+              </div>
+              <div className="icon-container">
+                <span class="material-icons icon">chat_bubble</span>
+                <span className="like-info">0</span>
+              </div>
+            </div>
+          </div>
+        )}
+        <div className="profile_viewer_info">
+          <span className="profile_viewer_text">
+            Easyexports, Dashboard, Online Platform, Website Design
+          </span>
+          <span>Anestis Gaudas • Follow</span>
+        </div>
+      </div>
 
       <div className="home_container">
         <div className="sidenav">
-          <SideNav/>
+          <SideNav />
         </div>
         <div className="home_content_container">
           <div className="home_content_image_container">

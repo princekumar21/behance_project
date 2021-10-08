@@ -5,6 +5,70 @@
   height: 100%;
   background-color: #f9f9f9;
 }
+.profile_viewer{
+  display: flex;
+ 
+  align-items: center;
+  position: absolute;
+  top: 4.5rem;
+  left: 7.9rem;
+  width: 80%;
+  height: 4rem;
+ 
+}
+.profile_viewer_display{
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  box-shadow: rgba(25, 25, 25, 0.2) 0px 1px 2px 0px;
+  background-color: white;
+
+}
+.profile_viewer_info{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+  width: 50%;
+  margin-left: 20px;
+}
+.profile_viewer_text{
+  font-family: "acumin-pro", "Acumin Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+.hover_profile_info_home{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 3px;
+    top: 4rem;
+    left: -1rem;
+    width: 25rem;
+    height: 12rem;
+    box-shadow: rgba(25, 25, 25, 0.2) 0px 1px 2px 0px;
+    background-color: #ffffff;
+}
+.post_viewer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-items: center;
+    height: 60%;
+    width: 95%;
+   
+    margin-top: 40px;
+
+}
+.post{
+     display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    margin-left: 6px;
+}
 
 .home_content_container {
   display: flex;
